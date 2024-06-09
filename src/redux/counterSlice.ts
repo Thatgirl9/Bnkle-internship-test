@@ -1,14 +1,18 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+// Create an object type for initial state
 interface CardCounterState {
   clicks: { [key: string]: number };
   titles: { [key: string]: string };
 }
 
+// Create a state
 const initialState: CardCounterState = {
   clicks: {},
   titles: {},
 };
+
+// Create a slice that includes the initial state and reducer. Slice produces an action creator
 const counterSlice = createSlice({
   name: "counter",
   initialState,
