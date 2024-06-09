@@ -1,0 +1,41 @@
+.main-table {
+  padding: 2em;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 0.8em;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead tr th {
+  padding: 0.7em 2em;
+  border: 1px solid transparent;
+  background-color: #02bcd5;
+}
+
+tbody tr td {
+  padding: 1em 4em;
+  border: 1px solid transparent;
+  table-layout: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+@media screen and (max-width: 767px) {
+  .main-table {
+    padding: 2em;
+    margin-left: 7em;
+  }
+
+  tbody tr td {
+    padding: 1em 2em;
+  }
+}
