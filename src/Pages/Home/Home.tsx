@@ -44,6 +44,9 @@ const Home: React.FC = () => {
           title: card.title,
         }));
         dispatch(cardTitles(cardTitle));
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, [dispatch]);
 
