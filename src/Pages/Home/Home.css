@@ -1,9 +1,23 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
   padding: 4em 1em 4em 1em;
+}
+
+.next-page {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+.next-page .link {
+  text-decoration: none;
+  color: #02bcd5;
+  font-weight: 600;
 }
 
 .card-container {

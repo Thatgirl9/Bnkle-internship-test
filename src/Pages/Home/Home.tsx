@@ -56,6 +56,12 @@ const Home: React.FC = () => {
   return (
     <>
       <main className="container">
+        <p className="next-page">
+          <Link to="./analytics" className="link">
+            Analytics
+          </Link>
+        </p>
+
         {loading ? (
           <Spinner />
         ) : (
@@ -109,10 +115,6 @@ const Home: React.FC = () => {
           <Modal card={selectedCard} onClose={() => setShowModal(false)} />
         )}
       </main>
-
-      <li>
-        <Link to="./analytics">Analytics</Link>
-      </li>
     </>
   );
 };
