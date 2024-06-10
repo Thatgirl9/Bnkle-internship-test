@@ -12,7 +12,7 @@ const initialState: CardCounterState = {
   titles: {},
 };
 
-// Create a slice that includes the initial state and reducer. Slice produces an action creator
+// Create a slice that includes the initial state and reducer. Slice produces an action and action creator
 const counterSlice = createSlice({
   name: "counter",
   initialState,

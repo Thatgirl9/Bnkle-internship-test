@@ -27,6 +27,7 @@ const Home: React.FC = () => {
   const [cards, setCards] = useState<Card[]>([]);
   const [selectedCard, setSelectedCard] = useState<Card | null>(null);
   const [showModal, setShowModal] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
   const [isHovered, setIsHovered] = useState<string | null>(null);
   const dispatch = useDispatch();
 
@@ -46,6 +47,8 @@ const Home: React.FC = () => {
         dispatch(cardTitles(cardTitle));
       })
       .catch((error) => {
+        setErrorMessage(error.message);
+        setLoading(false);
         console.log(error);
       });
   }, [dispatch]);
@@ -64,6 +67,12 @@ const Home: React.FC = () => {
             Analytics
           </Link>
         </p>
+
+        {errorMessage && (
+          <div className="error-message">
+            <p>{errorMessage}</p>
+          </div>
+        )}
 
         {loading ? (
           <Spinner />
