@@ -37,7 +37,57 @@ Complete documentation was created. This covers information about the Blog Post 
 
 ## How to Install and Run Blog Post📝.
 
+- **Prerequisites- [Node.js](https://nodejs.org/en) installed and [Git](https://www.git-scm.com/) installed**.
 
+- Fork this Repository
+- Clone your forked repository into your local machine terminal using this command.
+```
+  git clone githubForkedRepoUrl
+```
+- Install NPM packages by running this command in your terminal.
+ ```
+  npm install
+ ```
+- To view the website on your local server,
+``` 
+npm run dev
+```
+Click the link that shows.
+
+
+## How to Contribute to Blog Post📝.
+
+- After installing the NPM packages from the step above.
+
+- Create a branch, by running the command in your terminal, this creates a new branch and checkout.
+```
+git branch -M branchname
+```
+
+- Make your changes
+
+- After making your changes. Run the following commands.
+```
+  git add .
+```
+to add all changed files, 
+```
+git commit -m "commit message"
+```
+write a short description stating what you did between the quotes, 
+```
+git push -u origin branchname
+```
+this pushes your changes to the main branch and prompts a pull request to compare both branches.
+
+- Create a Pull Request.
+
+- Wait for the pull request to be merged.
+
+
+## Conclusion.
+
+Thank you for reading🚀.
 
   
   
