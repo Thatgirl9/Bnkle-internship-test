@@ -2,6 +2,8 @@
 
 The Blog Post is a landing page that displays a list of posts fetched from an API. When hovered it displays a **Learn More** text that presents a modal showing more information about the post like the Author's Image. It routes to an **Analytics** *(/analytics)* page, that tracks and shows how often a post has been clicked in a tabular form.
 
+**[Blog Post](https://blog-posts-test.netlify.app/)**
+
 ## Technologies Used ⚙ and Reference Links 🔗.
 - **Technologies**
 - [Vite + React](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) - Used to create a React Application supporting Typescript.
